@@ -25,7 +25,7 @@ while len(TRACKS) < 100 and offset_var <= TRACKS['total']:
             for artist in song['track']['artists']:
                 print(artist['name'], len(artist_list))
                 artist_list.append(artist['name'])
-        offset_var += 132
+        offset_var += 132 #its just somewhat optimal without missing a song
 
     except:
         with open('artist_list1.txt', 'w', encoding="utf-8") as f:
